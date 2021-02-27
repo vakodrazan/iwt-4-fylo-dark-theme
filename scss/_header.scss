@@ -1,0 +1,43 @@
+@import "./variables";
+
+.header {
+    @include flex-row-layout();
+    justify-content: space-between;
+    padding-top: 21px;
+    padding-bottom: 44px;
+    
+    @media (min-width: $desktop_breakpoint) {
+        padding-top: 73px;
+        padding-bottom: 90px;
+    }
+
+
+    &__title {
+        width: 30%;
+    }
+    
+    &__navigation {
+        font-family: "Raleway", Arial, Helvetica, sans-serif;
+        color: rgb(233, 223, 223);
+
+        &__list {
+            @include flex-row-layout();
+            justify-content: space-between;
+            gap: 22px;
+
+            @media (min-width: $desktop_breakpoint) {
+                gap: 54px;
+            }
+
+            &__item{
+
+                &__link {
+                    &:hover {
+                        text-decoration: underline;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
