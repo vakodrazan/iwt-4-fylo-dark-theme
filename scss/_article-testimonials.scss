@@ -1,0 +1,50 @@
+@import "./variables";
+
+.article-testimonials {
+    padding-bottom: 138px;
+
+    &__list {
+        @include grid-layout();
+        gap: 22px;
+
+        @media (min-width: $desktop_breakpoint) {
+            @include flex-row-layout();
+            gap: 41px;
+        }
+
+        &__team {
+            background-color: $high-dark-blue;
+            border-radius: 4px;
+            padding: 30px 20px;
+            box-shadow: 5px 5px 8px 4px rgb(20, 20, 20);
+
+            &__link {
+
+                &__description {
+                    padding-bottom: 21px;
+                }
+
+                &__information {
+                    @include flex-row-layout();
+                    gap: 13px;
+
+                    &__profile {
+                        border-radius: 50%;
+                        width: 26px;
+                    }
+
+                    &__about{
+                        @include flex-row-layout();
+                        align-items: flex-start;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        &__name {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

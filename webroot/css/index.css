@@ -138,15 +138,16 @@ input {
 
 .article-feature {
   display: grid;
-  gap: 106px;
   grid-template-columns: 1fr;
   justify-items: center;
+  gap: 106px;
   text-align: center;
   padding-bottom: 138px; }
   @media (min-width: 1440px) {
     .article-feature {
       grid-template-columns: repeat(2, 1fr);
       max-width: 60%;
+      row-gap: 106px;
       column-gap: 153px;
       margin: auto; } }
   .article-feature__list__title {
@@ -186,3 +187,41 @@ input {
     width: fit-content;
     border-bottom: 1px solid #65e2d9;
     padding-bottom: 5px; }
+
+.article-testimonials {
+  padding-bottom: 138px; }
+  .article-testimonials__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 22px; }
+    @media (min-width: 1440px) {
+      .article-testimonials__list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 41px; } }
+    .article-testimonials__list__team {
+      background-color: #202a3c;
+      border-radius: 4px;
+      padding: 30px 20px;
+      box-shadow: 5px 5px 8px 4px #141414; }
+      .article-testimonials__list__team__link__description {
+        padding-bottom: 21px; }
+      .article-testimonials__list__team__link__information {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 13px; }
+        .article-testimonials__list__team__link__information__profile {
+          border-radius: 50%;
+          width: 26px; }
+        .article-testimonials__list__team__link__information__about {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 5px; }
+          .article-testimonials__list__team__link__information__about__name {
+            font-size: 18px; }
