@@ -1,0 +1,22 @@
+@import "./variables";
+
+.article-feature {
+    @include grid-layout();
+    text-align: center;
+
+    @media (min-width: $desktop_breakpoint) {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 60%;
+        column-gap: 153px;
+        margin: auto;
+    }
+
+    &__list {
+
+        &__title {
+            font-size: 24px;
+            padding-top: 32px;
+            padding-bottom: 12px;
+        }
+    }
+}

@@ -22,3 +22,10 @@ $light-red: hsl(0, 100%, 63%);
     flex-direction: row;
     align-items: center;
 }
+
+@mixin grid-layout {
+    display: grid;
+    gap: 106px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
