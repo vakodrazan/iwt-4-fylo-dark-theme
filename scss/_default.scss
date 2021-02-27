@@ -1,0 +1,33 @@
+@import "./variables";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: $light-dark-blue;
+    color: $white;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+ul {
+    @include reset-list-style()
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}

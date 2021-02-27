@@ -1,7 +1,16 @@
 // Break point
 $desktop_breakpoint: 1440px;
 
+// Color
 $medium-dark-blue: hsl(217, 28%, 15%);
 $light-dark-blue: hsl(218, 28%, 13%);
 $very-light-dark-blue: hsl(216, 53%, 9%);
 $high-dark-blue: hsl(219, 30%, 18%);
+$white: hsl(0, 0%, 100%);
+
+
+@mixin reset-list-style {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
