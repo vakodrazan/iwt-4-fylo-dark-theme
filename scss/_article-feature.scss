@@ -2,12 +2,14 @@
 
 .article-feature {
     @include grid-layout();
+    gap: 106px;
     text-align: center;
     padding-bottom: 138px;
 
     @media (min-width: $desktop_breakpoint) {
         grid-template-columns: repeat(2, 1fr);
         max-width: 60%;
+        row-gap: 106px;
         column-gap: 153px;
         margin: auto;
     }
