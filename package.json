@@ -1,0 +1,23 @@
+{
+  "name": "iwt-4-fylo-dark-theme",
+  "version": "1.0.0",
+  "description": "![Design preview for the Fylo landing page with dark theme and features grid challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass scss -o webroot/css",
+    "scss:watch": "npm run css && node-sass scss -w -o webroot/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vakodrazan/iwt-4-fylo-dark-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vakodrazan/iwt-4-fylo-dark-theme/issues"
+  },
+  "homepage": "https://github.com/vakodrazan/iwt-4-fylo-dark-theme#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
