@@ -3,6 +3,7 @@
 .article-feature {
     @include grid-layout();
     text-align: center;
+    padding-bottom: 138px;
 
     @media (min-width: $desktop_breakpoint) {
         grid-template-columns: repeat(2, 1fr);
