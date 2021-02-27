@@ -32,3 +32,25 @@ p {
 img {
     max-width: 100%;
 }
+
+button {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+input {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.call-to-action {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    background: linear-gradient(138deg, $cyan -49%, $blue 100%);
+    border-radius: 28px;
+    border: unset;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 53px;
+    padding-right: 53px;
+}
