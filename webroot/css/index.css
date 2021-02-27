@@ -189,7 +189,11 @@ input {
     padding-bottom: 5px; }
 
 .article-testimonials {
-  padding-bottom: 138px; }
+  padding-bottom: 138px;
+  background-image: url("../images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-top: 40px; }
   .article-testimonials__list {
     display: grid;
     grid-template-columns: 1fr;
