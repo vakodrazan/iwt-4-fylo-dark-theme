@@ -1,0 +1,40 @@
+@import "./variables";
+
+.article-productivity {
+    padding-bottom: 137px;
+
+    @media (min-width: $desktop_breakpoint) {
+        @include flex-row-layout();
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+    &__title {
+        font-size: 18px;
+        padding-top: 44px;
+        padding-bottom: 20px;
+
+        @media (min-width: $desktop_breakpoint) {
+            font-size: 32px;
+            max-width: 50%;
+        }
+    }
+
+    &__description {
+        padding-bottom: 23px;
+
+        @media (min-width: $desktop_breakpoint) {
+            max-width: 80%;
+            font-size: 18px;
+        }
+    }
+
+    &__link {
+        @include flex-row-layout();
+        gap: 11px;
+        color: $cyan;
+        width: fit-content;
+        border-bottom: 1px solid $cyan;
+        padding-bottom: 5px;
+    }
+}
