@@ -58,4 +58,8 @@ input {
     &:hover {
         background: #8adae3;
     }
+
+    &:focus {
+        outline: none;
+    }
 }
