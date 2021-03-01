@@ -1,0 +1,68 @@
+@import "./variables";
+
+.article-signin {
+    background-color: $medium-dark-blue;
+    text-align: center;
+    padding: 66px 26px;
+    max-width: 375px;
+    margin: auto;
+    box-shadow: 5px 5px 8px rgb(0, 0, 0);
+    border-radius: 9px;
+
+    @media (min-width: $desktop_breakpoint) {
+        max-width: 50%;
+        padding: 66px 75px;
+    }
+
+    &__title {
+        font-size: 18px;
+        padding-bottom: 21px;
+    }
+
+    &__description {
+        padding-bottom: 30px;
+
+        @media (min-width: $desktop_breakpoint) {
+            max-width: 86%;
+            margin: 0 auto;
+        }
+    }
+
+    &__form {
+        @include flex-row-layout();
+        flex-direction: column;
+        gap: 20px;
+
+        @media (min-width: $desktop_breakpoint) {
+            flex-direction: row;
+        }
+
+        &__input {
+            width: 85%;
+            border-radius: 24px;
+            border: unset;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 26px;
+            padding-right: 12px;
+
+            @media (min-width: $desktop_breakpoint) {
+                max-width: 60%;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &__submit {
+            width: 95%;
+            padding-left: 26px;
+            padding-right: 26px;
+
+            @media (min-width: $desktop_breakpoint) {
+                max-width: 30%;
+            }
+        }
+    }
+}
