@@ -191,11 +191,11 @@ input {
     padding-bottom: 5px; }
 
 .article-testimonials {
-  padding-bottom: 138px;
   background-image: url("../images/bg-quotes.png");
   background-repeat: no-repeat;
   background-position: top left;
-  padding-top: 40px; }
+  padding-top: 40px;
+  padding-bottom: 55px; }
   .article-testimonials__list {
     display: grid;
     grid-template-columns: 1fr;
@@ -239,7 +239,10 @@ input {
   max-width: 375px;
   margin: auto;
   box-shadow: 5px 5px 8px black;
-  border-radius: 9px; }
+  border-radius: 9px;
+  position: relative;
+  bottom: -100px;
+  z-index: 1; }
   @media (min-width: 1440px) {
     .article-signin {
       max-width: 50%;
@@ -282,3 +285,7 @@ input {
       @media (min-width: 1440px) {
         .article-signin__form__submit {
           max-width: 30%; } }
+
+.footer {
+  padding-top: 199px;
+  background-color: #0b1523; }
