@@ -3,4 +3,65 @@
 .footer {
     padding-top: 199px;
     background-color: $very-light-dark-blue;
+
+    &__content {
+        @include flex-row-layout();
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 78px;
+
+        @media (min-width: $desktop_breakpoint) {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: unset;
+        }
+
+        &__contacts {
+            @include flex-row-layout();
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 22px;
+
+            @media (min-width: $desktop_breakpoint) {
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 81px;
+            }
+
+            &__information {
+                max-width: 375px;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 28px;
+
+                svg {
+                    width: 32px;
+                }
+            }
+        }
+
+        &__navigation {
+            @include flex-row-layout();
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 49px;
+
+            @media (min-width: $desktop_breakpoint) {
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 81px;
+            }
+        }
+
+        &__social {
+            @include flex-row-layout();
+            gap: 14px;
+            align-self: center;
+
+            @media (min-width: $desktop_breakpoint) {
+                align-self: flex-start;
+            }
+        }
+    }
 }
