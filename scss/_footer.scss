@@ -1,14 +1,21 @@
 @import "./variables";
 
 .footer {
-    padding-top: 199px;
+    --padding-bottom: 38px;
+    --padding-top: 199px;
+    padding-top: var(--padding-top);
     background-color: $very-light-dark-blue;
+    padding-bottom: var(--padding-bottom);
+
+    @media (min-width: $desktop_breakpoint) {
+        --padding-bottom: 90px;
+    }
 
     &__content {
-        @include flex-row-layout();
-        flex-direction: column;
+        @include flex-column-layout();
         align-items: flex-start;
         gap: 78px;
+        padding-top: 41px;
 
         @media (min-width: $desktop_breakpoint) {
             flex-direction: row;
@@ -17,9 +24,8 @@
         }
 
         &__contacts {
-            @include flex-row-layout();
+            @include flex-column-layout();
             align-items: flex-start;
-            flex-direction: column;
             gap: 22px;
 
             @media (min-width: $desktop_breakpoint) {
@@ -30,13 +36,22 @@
 
             &__information {
                 max-width: 375px;
-                display: flex;
-                flex-direction: row;
+                @include flex-row-layout();
                 align-items: flex-start;
                 gap: 28px;
 
                 svg {
                     width: 32px;
+                }
+            }
+
+            &__list {
+                @include flex-column-layout();
+                gap: 24px;
+
+                &__item {
+                    @include flex-row-layout();
+                    gap: 28px;
                 }
             }
         }
@@ -51,6 +66,11 @@
                 flex-direction: row;
                 justify-content: space-between;
                 gap: 81px;
+            }
+
+            &__list {
+                @include flex-column-layout();
+                gap: 22px;
             }
         }
 

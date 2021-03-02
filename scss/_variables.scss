@@ -17,10 +17,16 @@ $light-red: hsl(0, 100%, 63%);
     margin: 0;
     padding: 0;
 }
+
 @mixin flex-row-layout {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+@mixin flex-column-layout {
+    display: flex;
+    flex-direction: column;
 }
 
 @mixin grid-layout {
