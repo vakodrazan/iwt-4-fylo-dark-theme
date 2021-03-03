@@ -11,6 +11,10 @@
         --padding-bottom: 90px;
     }
 
+    a:hover {
+        font-weight: bold;
+    }
+
     &__content {
         @include flex-column-layout();
         align-items: flex-start;
@@ -81,6 +85,22 @@
 
             @media (min-width: $desktop_breakpoint) {
                 align-self: flex-start;
+            }
+
+            &__item {
+
+                &__link {
+                    border: 1px solid currentColor;
+                    border-radius: 50%;
+                    padding-top: 14px;
+                    padding-bottom: 0px;
+                    padding-left: 4px;
+                    padding-right: 5px;
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
             }
         }
     }

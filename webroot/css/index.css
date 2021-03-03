@@ -295,6 +295,8 @@ input {
   @media (min-width: 1440px) {
     .footer {
       --padding-bottom: 90px; } }
+  .footer a:hover {
+    font-weight: bold; }
   .footer__content {
     display: flex;
     flex-direction: column;
@@ -359,3 +361,12 @@ input {
       @media (min-width: 1440px) {
         .footer__content__social {
           align-self: flex-start; } }
+      .footer__content__social__item__link {
+        border: 1px solid currentColor;
+        border-radius: 50%;
+        padding-top: 14px;
+        padding-bottom: 0px;
+        padding-left: 4px;
+        padding-right: 5px; }
+        .footer__content__social__item__link:hover {
+          color: #339ecc; }
