@@ -54,8 +54,11 @@
                 gap: 24px;
 
                 &__item {
-                    @include flex-row-layout();
-                    gap: 28px;
+
+                    &__link {
+                        @include flex-row-layout();
+                        gap: 28px;
+                    }
                 }
             }
         }

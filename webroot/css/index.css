@@ -331,7 +331,7 @@ input {
         display: flex;
         flex-direction: column;
         gap: 24px; }
-        .footer__content__contacts__list__item {
+        .footer__content__contacts__list__item__link {
           display: flex;
           flex-direction: row;
           align-items: center;
